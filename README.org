@@ -1,0 +1,16 @@
+* 概要
+mbtts は MBROLA と MeCab を使って日本語文字列を音声に変換する Python パッ
+ケージです。http://neu101.seesaa.net/ で公開されています。
+
+mbtts を deb パッケージにしてみました。オリジナルとの変更点は
+[[./debian/patches]] 以下を見てください。
+
+* ビルド
+依存しているのは、
+- libmecab-dev
+- python-dev
+- python-support
+- quilt
+です。
+
+上記をインストールした後、dpkg-buildpackage してください。
